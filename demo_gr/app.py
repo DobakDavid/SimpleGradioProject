@@ -3,7 +3,7 @@ import gradio as gr
 import os 
 import torch
 
-from model import create_effnetb3_model
+from model import create_effnet_b3_model
 from timeit import default_timer as timer
 from typing import Tuple, Dict
 
@@ -11,7 +11,7 @@ from typing import Tuple, Dict
 class_names = ['pizza', 'steak', 'sushi']
 
 ### 2. Model and transforms perparation ###
-effnetb2, effnetb2_transforms = create_effnetb3_model(
+effnetb2, effnetb2_transforms = create_effnet_b3_model(
     num_classes=3)
 
 # Load save weights
