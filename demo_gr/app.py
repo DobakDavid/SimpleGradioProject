@@ -17,7 +17,7 @@ effnetb2, effnetb2_transforms = create_effnetb3_model(
 # Load save weights
 effnetb2.load_state_dict(
     torch.load(
-        f="pretrained_model.pth",
+        f="efficientnet_b3.pth",
         map_location=torch.device("cpu") # load the model to the CPU
     )
 )
